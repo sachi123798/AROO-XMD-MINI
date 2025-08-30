@@ -30,25 +30,23 @@ const logger = MAIN_LOGGER.child({});
 logger.level = "silent";
 
 const msgRetryCounterCache = new NodeCache();
-
 const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
-
 const sessionDir = path.join(__dirname, 'session');
 const credsPath = path.join(sessionDir, 'creds.json');
 
 if (!fs.existsSync(sessionDir)) fs.mkdirSync(sessionDir, { recursive: true });
 
-// ---------------- MEGA SESSION DOWNLOAD (EMAIL + PASSWORD OPTION) ----------------
+// ---------------- MEGA SESSION DOWNLOAD ----------------
 async function downloadSessionData() {
-    if (!config.SESSION_ID) {
-        console.error('❌ Please add your session to SESSION_ID env !!');
+    if (!process.env.SESSION_ID) {
+        console.error('❌ SESSION_ID missing in .env!');
         return false;
     }
 
-    const sessdata = config.SESSION_ID.split("Caseyrhodes~")[1];
+    const sessdata = process.env.SESSION_ID.split("Caseyrhodes~")[1];
     if (!sessdata || !sessdata.includes("#")) {
-        console.error('❌ Invalid SESSION_ID format! It must contain both file ID and decryption key.');
+        console.error('❌ Invalid SESSION_ID format!');
         return false;
     }
 
@@ -57,13 +55,9 @@ async function downloadSessionData() {
     try {
         console.log("🔄 Downloading Mega Session...");
 
-        // ⚡ Add Mega email & password
         const file = File.fromURL(
             `https://mega.nz/file/${fileID}#${decryptKey}`,
-            {
-                email: process.env.fghia2840@Gmail.com      // <--- Mega Email
-                password: process.env.Bloodxmd234@# // <--- Mega Password
-            }
+            { email: 'fghia2840@gmail.com', password: 'Bloodxmd234@#' }
         );
 
         const data = await new Promise((resolve, reject) => {
@@ -83,8 +77,7 @@ async function downloadSessionData() {
 async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
-        const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 JINX-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        const { version } = await fetchLatestBaileysVersion();
 
         const Matrix = makeWASocket({
             version,
@@ -96,7 +89,6 @@ async function start() {
             getMessage: async () => ({})
         });
 
-        // ---------------- CONNECTION ----------------
         Matrix.ev.on('connection.update', async ({ connection, lastDisconnect }) => {
             if (connection === 'close' && lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut) {
                 setTimeout(start, 3000);
@@ -104,15 +96,11 @@ async function start() {
                 if (initialConnection) {
                     console.log(chalk.green("Connected Successfully JINX-XMD 🤍"));
 
-                    // ---------------- WELCOME BUTTON MESSAGE ----------------
                     const startMess = {
                         image: { url: "https://i.ibb.co/fGSVG8vJ/caseyweb.jpg" }, 
                         caption: `*Hello BLOOD-XMD User!* 👋🏻
-
-> Meet JINX-XMD WhatsApp Bot 🎊
-- *YOUR PREFIX:* = ${prefix}
-- Join Channel: https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E
-- GitHub: https://github.com/caseyweb/CASEYRHODES-XMD`,
+> JINX-XMD Bot is now live.
+- PREFIX: ${prefix}`,
                         buttons: [
                             { buttonId: 'help', buttonText: { displayText: '📋 HELP' }, type: 1 },
                             { buttonId: 'menu', buttonText: { displayText: '📱 MENU' }, type: 1 },
@@ -122,12 +110,8 @@ async function start() {
                     };
                     try { await Matrix.sendMessage(Matrix.user.id, startMess); } catch {}
 
-                    // ---------------- Follow newsletters ----------------
                     await followNewsletters(Matrix);
-
-                    // ---------------- Join WhatsApp group ----------------
                     await joinWhatsAppGroup(Matrix);
-
                     initialConnection = false;
                 }
             }
@@ -135,33 +119,25 @@ async function start() {
 
         Matrix.ev.on('creds.update', saveCreds);
 
-        // ---------------- MESSAGES HANDLER ----------------
         Matrix.ev.on("messages.upsert", async (chatUpdate) => {
-            try {
-                const m = chatUpdate.messages[0];
-                if (!m || !m.message) return;
+            const m = chatUpdate.messages[0];
+            if (!m || !m.message) return;
 
-                // ---------------- BUTTON RESPONSES ----------------
-                if (m.message.buttonsResponseMessage) {
-                    const selected = m.message.buttonsResponseMessage.selectedButtonId;
-                    if (selected === 'help') await Matrix.sendMessage(m.key.remoteJid, { text: `📋 HELP MENU\nUse ${prefix}menu to list commands.` });
-                    if (selected === 'menu') await Matrix.sendMessage(m.key.remoteJid, { text: `📱 MAIN MENU\nType ${prefix}all to see all features.` });
-                    if (selected === 'source') await Matrix.sendMessage(m.key.remoteJid, { text: `⚙️ SOURCE CODE\nhttps://github.com/caseyweb/CASEYRHODES-XMD` });
-                }
+            if (m.message.buttonsResponseMessage) {
+                const sel = m.message.buttonsResponseMessage.selectedButtonId;
+                if (sel === 'help') await Matrix.sendMessage(m.key.remoteJid, { text: `📋 HELP: ${prefix}menu` });
+                if (sel === 'menu') await Matrix.sendMessage(m.key.remoteJid, { text: `📱 MENU: ${prefix}all` });
+                if (sel === 'source') await Matrix.sendMessage(m.key.remoteJid, { text: `⚙️ Source: https://github.com/caseyweb/CASEYRHODES-XMD` });
+            }
 
-                // Auto-react messages
-                if (config.AUTO_REACT === 'true' && !m.key.fromMe) {
-                    try {
-                        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-                        await doReact(randomEmoji, m, Matrix);
-                    } catch {}
-                }
+            if (config.AUTO_REACT === 'true' && !m.key.fromMe) {
+                const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+                try { await doReact(randomEmoji, m, Matrix); } catch {}
+            }
 
-                await Handler(chatUpdate, Matrix, logger);
-            } catch {}
+            await Handler(chatUpdate, Matrix, logger);
         });
 
-        // ---------------- CALL & GROUP HANDLERS ----------------
         Matrix.ev.on("call", async (json) => { try { await Callupdate(json, Matrix); } catch {} });
         Matrix.ev.on("group-participants.update", async (msg) => { try { await GroupUpdate(Matrix, msg); } catch {} });
 
@@ -174,36 +150,33 @@ async function start() {
     }
 }
 
-// ---------------- NEWSLETTER FOLLOW ----------------
+// ---------------- NEWSLETTER & GROUP ----------------
 async function followNewsletters(Matrix) {
-    const newsletterChannels = ["120363299029326322@newsletter","120363401297349965@newsletter","120363339980514201@newsletter"];
-    for (const channel of newsletterChannels) {
-        try { await Matrix.newsletterFollow(channel); console.log(chalk.green(`[✅] Followed: ${channel}`)); } 
-        catch (err) { console.log(chalk.red(`[❌] Failed: ${channel}`)); }
+    const newsletters = ["120363299029326322@newsletter","120363401297349965@newsletter","120363339980514201@newsletter"];
+    for (const ch of newsletters) {
+        try { await Matrix.newsletterFollow(ch); console.log(chalk.green(`[✅] Followed: ${ch}`)); } 
+        catch (err) { console.log(chalk.red(`[❌] Failed: ${ch}`)); }
     }
 }
 
-// ---------------- GROUP JOIN ----------------
 async function joinWhatsAppGroup(Matrix) {
-    const inviteCode = "CaOrkZjQZhfo";
+    const inviteCode = "EDHXhQQZhfo";
     try { await Matrix.groupAcceptInvite(inviteCode); console.log(chalk.green("[✅] Joined Group")); } 
-    catch (err) { console.log(chalk.red("[❌] Failed to join group")); }
+    catch { console.log(chalk.red("[❌] Failed to join group")); }
 }
 
 // ---------------- INIT ----------------
 async function init() {
-    if (fs.existsSync(credsPath)) {
-        console.log("🔒 Session file found, starting bot...");
-        await start();
-    } else {
-        const sessionDownloaded = await downloadSessionData();
-        if (sessionDownloaded) { console.log("🔒 Mega session downloaded."); await start(); }
-        else { console.log("No session found, QR code required."); useQR = true; await start(); }
+    if (fs.existsSync(credsPath)) { console.log("🔒 Session exists, starting bot..."); await start(); }
+    else {
+        const downloaded = await downloadSessionData();
+        if (downloaded) { console.log("🔒 Mega session downloaded."); await start(); }
+        else { console.log("No session found, QR code will be printed."); useQR = true; await start(); }
     }
 }
 
 init();
 
-// ---------------- EXPRESS SERVER ----------------
-app.get('/', (req, res) => { res.send('╭──[ hello user ]─\n│🤗 Bot is live!\n╰──────────────'); });
-app.listen(PORT, () => { console.log(`Server running on port ${PORT}`); });
+// ---------------- EXPRESS ----------------
+app.get('/', (req, res) => res.send('🤗 Bot is live!'));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
