@@ -107,7 +107,7 @@ async function start() {
                     // Send welcome message after successful connection with buttons
                     const startMess = {
                         image: { url: "https://i.ibb.co/fGSVG8vJ/caseyweb.jpg" }, 
-                        caption: `*Hello there JINX-XMD User! 👋🏻* 
+                        caption: `*Hello there BLOOD-XMD User! 👋🏻* 
 
 > Simple, Straightforward, But Loaded With Features 🎊. Meet JINX-XMD WhatsApp Bot.
 *Thanks for using JINX-XMD 🚩* 
