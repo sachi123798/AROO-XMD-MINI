@@ -29,7 +29,7 @@ const ping = async (m, Matrix) => {
     // CONTENT DEFINITION
     // ======================
     const imageUrl = "https://i.ibb.co/fGSVG8vJ/caseyweb.jpg";
-    const text = `*ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ* : ${responseTime.toFixed(2)} s`;
+    const text = `*👁️‍🗨️ BLOOD-XMD* : ${responseTime.toFixed(2)} s`;
     
     // ======================
     // BUTTONS DEFINITION
@@ -38,28 +38,28 @@ const ping = async (m, Matrix) => {
       // Download category
       {
         buttonId: `${prefix}owner`,
-        buttonText: { displayText: "📥 Owner" },
+        buttonText: { displayText: "👑 Owner" },
         type: 1
       },
       
       // Group category
       {
         buttonId: `${prefix}system`,
-        buttonText: { displayText: "System" },
+        buttonText: { displayText: "📑 System" },
         type: 1
       },
       
       // Fun category
       {
         buttonId: `${prefix}fun-menu`,
-        buttonText: { displayText: "🎉 Ping" },
+        buttonText: { displayText: "👁️‍🗨️ Ping" },
         type: 1
       },
       
       // Owner category
       {
         buttonId: `${prefix}alive`,
-        buttonText: { displayText: "👑 Alive" },
+        buttonText: { displayText: "🫟 Alive" },
         type: 1
       }
     ];
@@ -88,8 +88,8 @@ const ping = async (m, Matrix) => {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363302677217436@newsletter',
-          newsletterName: 'POWERED BY CASEYRHODES TECH',
+          newsletterJid: '120363419102725912@newsletter',
+          newsletterName: 'ᴘᴏᴡᴇʀᴅ ʙʏ ʙʟᴏᴏᴅ xᴍᴅ',
           serverMessageId: -1
         }
       }
