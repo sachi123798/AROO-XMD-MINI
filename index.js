@@ -97,14 +97,25 @@ async function start() {
                     console.log(chalk.green("Connected Successfully JINX-XMD 🤍"));
 
                     const startMess = {
-                        image: { url: "https://i.ibb.co/fGSVG8vJ/caseyweb.jpg" }, 
+                        image: { url: "https://files.catbox.moe/1jcjvq.jpg" }, 
                         caption: `*Hello BLOOD-XMD User!* 👋🏻
-> JINX-XMD Bot is now live.
+
+> Simple, Straightforward, But Loaded With Features 🎊. Meet JINX-XMD WhatsApp Bot.
+*Thanks for using JINX-XMD 🚩* 
+Join WhatsApp Channel: ⤵️  
+> https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E
+
 - PREFIX: ${prefix}`,
+
+Don't forget to give a star to the repo ⬇️  
+> https://github.com/youusername/yourepo 
+
+> © Powered BY BLOOD XMD MINI  🍀 🖤
+
                         buttons: [
-                            { buttonId: 'help', buttonText: { displayText: '📋 HELP' }, type: 1 },
-                            { buttonId: 'menu', buttonText: { displayText: '📱 MENU' }, type: 1 },
-                            { buttonId: 'source', buttonText: { displayText: '⚙️ SOURCE' }, type: 1 }
+                            { buttonId: 'help', buttonText: { displayText: '𝘏𝘌𝘓𝘗 𝘔𝘌𝘕𝘜📋' }, type: 1 },
+                            { buttonId: 'menu', buttonText: { displayText: '𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 🧮' }, type: 1 },
+                            { buttonId: 'source', buttonText: { displayText: '𝘚𝘖𝘜𝘙𝘊𝘌 ⚙️' }, type: 1 }
                         ],
                         headerType: 1
                     };
@@ -125,9 +136,9 @@ async function start() {
 
             if (m.message.buttonsResponseMessage) {
                 const sel = m.message.buttonsResponseMessage.selectedButtonId;
-                if (sel === 'help') await Matrix.sendMessage(m.key.remoteJid, { text: `📋 HELP: ${prefix}menu` });
-                if (sel === 'menu') await Matrix.sendMessage(m.key.remoteJid, { text: `📱 MENU: ${prefix}all` });
-                if (sel === 'source') await Matrix.sendMessage(m.key.remoteJid, { text: `⚙️ Source: https://github.com/caseyweb/CASEYRHODES-XMD` });
+                if (sel === 'help') await Matrix.sendMessage(m.key.remoteJid, { text: `𝘏𝘌𝘓𝘗 𝘔𝘌𝘕𝘜📋: ${prefix}menu` });
+                if (sel === 'menu') await Matrix.sendMessage(m.key.remoteJid, { text: `𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 🧮: ${prefix}all` });
+                if (sel === 'source') await Matrix.sendMessage(m.key.remoteJid, { text: `𝘚𝘖𝘜𝘙𝘊𝘌 ⚙️: https://github.com/caseyweb/CASEYRHODES-XMD` });
             }
 
             if (config.AUTO_REACT === 'true' && !m.key.fromMe) {
