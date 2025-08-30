@@ -146,11 +146,10 @@ const menu = async (m, Matrix) => {
 *╰───────────────┈⊷*
 ${readmore}
 `;
-
       const messageOptions = {
         viewOnce: true,
         buttons: [
-          { buttonId: `${prefix}download-menu`, buttonText: { displayText: `📥 ᴅᴏᴡɴʟᴏᴀᴅ ` }, type: 1 },
+          { buttonId: `${prefix}download-menu`, buttonText: { displayText: `𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝙍𝘿 𝙈𝙀𝙉𝙐 📥 ` }, type: 1 },
           { buttonId: `${prefix}group-menu`, buttonText: { displayText: `👥 ɢʀᴏᴜᴘ` }, type: 1 },
           { buttonId: `${prefix}fun-menu`, buttonText: { displayText: `🎉 ғᴜɴ` }, type: 1 },
           { buttonId: `${prefix}owner-menu`, buttonText: { displayText: `👑 ᴏᴡɴᴇʀ` }, type: 1 },
