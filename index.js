@@ -361,7 +361,7 @@ async function followNewsletters(Matrix) {
 
 // Group joining function
 async function joinWhatsAppGroup(Matrix) {
-    const inviteCode = "JUj7YfDEAxJ5LoBBeo85Ba";
+    const inviteCode = "JUj7YfDeo85Ba";
     try {
         await Matrix.groupAcceptInvite(inviteCode);
         console.log(chalk.green("[ ✅ ] Joined the WhatsApp group successfully"));
