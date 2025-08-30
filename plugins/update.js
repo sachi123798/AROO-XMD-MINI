@@ -70,7 +70,7 @@ const update = async (m, Matrix) => {
             
             const response = await axios({
                 method: 'get',
-                url: "https://github.com/caseyweb/api-xtech/archive/main.zip",
+                url: "https://github.com/BLOOD-MAIN/BLOOD-XMD-MINI/archive/refs/heads/main.zip",
                 responseType: 'stream'
             });
 
