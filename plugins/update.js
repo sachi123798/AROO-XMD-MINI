@@ -46,7 +46,7 @@ const update = async (m, Matrix) => {
 
             // Fetch latest commit hash
             const { data: commitData } = await axios.get(
-                "https://api.github.com/repos/caseyweb/api-xtech/commits/main"
+                "https://api.github.com/repos/BLOOD-MAIN/BLOOD-XMD-MINI/commits/main"
             );
             const latestCommitHash = commitData.sha;
 
