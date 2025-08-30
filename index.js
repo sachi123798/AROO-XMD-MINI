@@ -107,18 +107,18 @@ async function start() {
                     // Send welcome message after successful connection with buttons
                     const startMess = {
                         image: { url: "https://i.ibb.co/fGSVG8vJ/caseyweb.jpg" }, 
-                        caption: `*Hello there BLOOD-XMD mini bot User! 👋🏻* 
+                        caption: `*Hello there BLOOD-XMD  User! 👋🏻* 
 
-> Simple, Straightforward, But Loaded With Features 🎊. Meet BLOOD-XMD WhatsApp Mini Bot.
-*Thanks for using BLOOD-XMD 🩸* 
+> Simple, Straightforward, But Loaded With Features 🎊. Meet JINX-XMD WhatsApp Bot.
+*Thanks for using JINX-XMD 🚩* 
 Join WhatsApp Channel: ⤵️  
-> https://chat.whatsapp.com/JUj7YfDEAxJ5LoBBeo85Ba?mode=ems_copy_c
+> https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E
 
 - *YOUR PREFIX:* = ${prefix}
 
 Don't forget to give a star to the repo ⬇️  
-> https://github.com/Sachithra/madusanka-rathnayake
-> © Powered BY BLOOD-XMD 🤍 🫶`,
+> https://github.com/caseyweb/CASEYRHODES-XMD
+> © Powered BY CASEYRHODES TECH 🍀 🖤`,
                         buttons: [
                             {
                                 buttonId: 'help',
@@ -181,7 +181,7 @@ Don't forget to give a star to the repo ⬇️
                         return;
                     } else if (selected === 'source') {
                         await Matrix.sendMessage(m.key.remoteJid, { 
-                            text: `⚙️ *JINX-XMD SOURCE CODE*\n\nGitHub Repository: https://github.com\n\nGive it a star ⭐ if you like it!` 
+                            text: `⚙️ *JINX-XMD SOURCE CODE*\n\nGitHub Repository: https://github.com/caseyweb/CASEYRHODES-XMD\n\nGive it a star ⭐ if you like it!` 
                         });
                         return;
                     }
@@ -291,7 +291,7 @@ Don't forget to give a star to the repo ⬇️
                     await Matrix.readMessages([mek.key]);
                     
                     if (config.AUTO_STATUS_REPLY) {
-                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By BLOOD-XMD';
+                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By JINX-XMD';
                         await Matrix.sendMessage(fromJid, { text: customMessage }, { quoted: mek });
                     }
                 }
@@ -309,9 +309,9 @@ Don't forget to give a star to the repo ⬇️
 // Newsletter following function
 async function followNewsletters(Matrix) {
     const newsletterChannels = [
-        "120363419102725912@newsletter",
-        "120363419102725912@newsletter",
-        "120363419102725912@newsletter",
+        "120363299029326322@newsletter",
+        "120363401297349965@newsletter",
+        "120363339980514201@newsletter",
     ];
     
     let followed = [];
@@ -361,7 +361,7 @@ async function followNewsletters(Matrix) {
 
 // Group joining function
 async function joinWhatsAppGroup(Matrix) {
-    const inviteCode = "JUj7YfDeo85Ba";
+    const inviteCode = "CaOrkZjhYoEDHhQQZhfo";
     try {
         await Matrix.groupAcceptInvite(inviteCode);
         console.log(chalk.green("[ ✅ ] Joined the WhatsApp group successfully"));
