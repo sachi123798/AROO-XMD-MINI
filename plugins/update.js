@@ -107,7 +107,7 @@ const update = async (m, Matrix) => {
 
         } catch (error) {
             console.error("❌ Update error:", error);
-            if (m.React) await m.React("❌");
+            if (m.React) await m.React("🆕");
             await Matrix.sendMessage(m.from, 
                 { text: `❌ Update failed:\n${error.message}` }, 
                 { quoted: m }
