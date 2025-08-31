@@ -73,7 +73,7 @@ const ping = async (m, Matrix) => {
       
       // Text content
       caption: text,
-      footer: "CASEYRHODES AI",
+      footer: "BLOOD-XMD MINI BOT",
       
       // Interactive elements
       buttons: buttons,
