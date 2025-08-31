@@ -1,6 +1,6 @@
 {
-  "name": "CASEYRHODES TECH",
-  "description": "I am Caseyrhodes tech WhatsApp MultiDevice Bot built in NodeJs to enhance the experience.",
+  "name": "BLOOD-XMD MINI BOT",
+  "description": "I am Sachithra madusanka  WhatsApp MultiDevice Bot built in NodeJs to enhance the experience.",
   "logo": "https://files.catbox.moe/neni8p.jpg",
   "keywords": ["NjabuloJb-elite"],
   "repository": "https://github.com/caseyweb/Caseyrhodes-AI",
@@ -29,7 +29,7 @@
     "DESCRIPTION": {
       "description": "add caption for menu and etc",
       "required": false,
-      "value": "> powered by Caseyrhodes"
+      "value": "> powered by Blood-xmd mini"
     },
     "ANTI_DELETE": {
       "description": "set path for antidelete for same chat set to same",
@@ -65,12 +65,12 @@
     "OWNER_NAME": {
       "description": "set owner name",
       "required": false,
-      "value": "Caseyrhodes tech"
+      "value": "Sachithra madusanka "
     },
     "OWNER_NUMBER": {
       "description": "set your owner number",
       "required": false,
-      "value": "254112192119"
+      "value": "94761332610"
     },
     "AUTO_READ": {
       "description": "make it true if you want bot to read message",
