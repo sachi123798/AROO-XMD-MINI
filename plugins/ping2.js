@@ -61,7 +61,7 @@ const ping = async (m, Matrix) => {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
                     display_text: toFancyFont("Follow our Channel"),
-                    url: "https://whatsapp.com/channel/0029VagJlnG6xCSU2tS1Vz19"
+                    url: "https://whatsapp.com/channel/0029Vb5hLc0HltYF7Ebf2S0M"
                   })
                 }
               ]
