@@ -88,13 +88,13 @@ const apkDownloader = async (m, Matrix) => {
     }
 
     const caption = `╭━━━〔 *ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ* 〕━━━┈⊷
-┃  *Name:* ${app.name}
-┃  *Size:* ${appSize} MB
-┃  *Package:* ${app.package}
-┃  *Updated On:* ${app.updated}
-┃  *Developer:* ${app.developer?.name || 'Unknown'}
+┃  *🗳️ Name :*  ${app.name}
+┃  *📂 Size :*  ${appSize} MB
+┃  *📦 Package :*  ${app.package}
+┃  *📆 Updated On :*  ${app.updated}
+┃  *🧑‍💻 Developer :*  ${app.developer?.name || 'Unknown'}
 ╰━━━━━━━━━━━━━━━┈⊷
-> *ᴍᴀᴅᴇ ʙʏ ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ*`;
+> *ᴍᴀᴅᴇ ʙʏ 𝙱𝙻𝙾𝙾𝙳 𝚇𝙼𝙳 𝙼𝙸𝙽𝙸*`;
 
     // Send success reaction
     await Matrix.sendMessage(m.key.remoteJid, { react: { text: "⬆️", key: m.key } });
@@ -130,12 +130,12 @@ const apkDownloader = async (m, Matrix) => {
       buttons: [
         {
           buttonId: `${prefix}menu`,
-          buttonText: { displayText: `${toFancyFont("Menu")}` },
+          buttonText: { displayText: `${toFancyFont("𝘔𝘌𝘕𝘜 📄")}` },
           type: 1
         },
         {
           buttonId: `${prefix}apk ${query}`,
-          buttonText: { displayText: `${toFancyFont("Search Again")}` },
+          buttonText: { displayText: `${toFancyFont("𝘚𝘌𝘈𝘙𝘊𝘏 𝘈𝘎𝘈𝘐𝘕 🔎")}` },
           type: 1
         }
       ],
