@@ -101,9 +101,9 @@ async function start() {
                         caption: `*Hello BLOOD-XMD User!* 👋🏻
 
 > Simple, Straightforward, But Loaded With Features 🎊. Meet JINX-XMD WhatsApp Bot.
-*Thanks for using JINX-XMD 🚩* 
+*Thanks for using BLOOD-XMD MINI 🚩* 
 Join WhatsApp Channel: ⤵️  
-> https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E
+> https://whatsapp.com/channel/0029VagJlnG6xCSU2tS1Vz19
 
 - PREFIX: ${prefix}`,
 
