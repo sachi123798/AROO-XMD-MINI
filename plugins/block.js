@@ -22,7 +22,7 @@ const block = async (m, gss) => {
         text: "*📛 THIS IS AN OWNER ONLY COMMAND*",
         footer: "You don't have permission to use this command",
         buttons: [
-          { buttonId: `${prefix}support`, buttonText: { displayText: "REQUEST SUPPORT" }, type: 1 }
+          { buttonId: `${prefix}support`, buttonText: { displayText: "𝘙𝘌𝘘𝘜𝘌𝘚𝘛 𝘚𝘜𝘗𝘗𝘖𝘙𝘛 📵" }, type: 1 }
         ],
         headerType: 1
       };
@@ -37,8 +37,8 @@ const block = async (m, gss) => {
         text: `Please mention a user, quote a message, or provide a number.\nUsage: ${prefix}block @user`,
         footer: "Select an option below",
         buttons: [
-          { buttonId: `${prefix}help block`, buttonText: { displayText: "HELP GUIDE" }, type: 1 },
-          { buttonId: `${prefix}listblock`, buttonText: { displayText: "BLOCKED LIST" }, type: 1 }
+          { buttonId: `${prefix}help block`, buttonText: { displayText: "𝘏𝘌𝘓𝘗 𝘎𝘜𝘐𝘋𝘌 💭" }, type: 1 },
+          { buttonId: `${prefix}listblock`, buttonText: { displayText: "𝘉𝘓𝘖𝘊𝘒 𝘓𝘐𝘚𝘛 🚫" }, type: 1 }
         ],
         headerType: 1
       };
@@ -61,7 +61,7 @@ const block = async (m, gss) => {
         text: 'Could not identify a valid user to block.',
         footer: "Please try again",
         buttons: [
-          { buttonId: `${prefix}help block`, buttonText: { displayText: "HELP" }, type: 1 }
+          { buttonId: `${prefix}help block`, buttonText: { displayText: "𝘏𝘌𝘓𝘗 💭" }, type: 1 }
         ],
         headerType: 1
       };
@@ -81,8 +81,8 @@ const block = async (m, gss) => {
       text: `Are you sure you want to block *${displayName}*?`,
       footer: "This action cannot be undone",
       buttons: [
-        { buttonId: `${prefix}confirm-block-${userName}`, buttonText: { displayText: "YES, BLOCK" }, type: 1 },
-        { buttonId: `${prefix}cancel`, buttonText: { displayText: "CANCEL" }, type: 1 }
+        { buttonId: `${prefix}confirm-block-${userName}`, buttonText: { displayText: "𝘠𝘌𝘚 𝘉𝘓𝘖𝘊𝘒 🚫" }, type: 1 },
+        { buttonId: `${prefix}cancel`, buttonText: { displayText: "𝘊𝘈𝘕𝘚𝘌𝘓 𝘉𝘓𝘖𝘊𝘒 ❌" }, type: 1 }
       ],
       headerType: 1
     };
