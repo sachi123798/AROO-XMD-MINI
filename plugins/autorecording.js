@@ -14,8 +14,8 @@ const autorecodingCommand = async (m, Matrix) => {
       // If no argument provided, show buttons
       if (!text || (text !== 'on' && text !== 'off')) {
         const buttons = [
-          {buttonId: `${prefix}autorecoding on`, buttonText: {displayText: '✅ ENABLE'}, type: 1},
-          {buttonId: `${prefix}autorecoding off`, buttonText: {displayText: '❌ DISABLE'}, type: 1}
+          {buttonId: `${prefix}autorecoding on`, buttonText: {displayText: '𝘌𝘕𝘈𝘉𝘓𝘌 ✅'}, type: 1},
+          {buttonId: `${prefix}autorecoding off`, buttonText: {displayText: '𝘋𝘐𝘚𝘈𝘉𝘓𝘌 ❌'}, type: 1}
         ];
         
         const buttonMessage = {
@@ -35,11 +35,11 @@ const autorecodingCommand = async (m, Matrix) => {
       if (text === 'on') {
         config.AUTO_RECODING = true;
         responseMessage = "✅ *Auto-Recoding has been enabled.*";
-        buttonText = {displayText: '❌ DISABLE'};
+        buttonText = {displayText: '𝘋𝘐𝘚𝘈𝘉𝘓𝘌 ❌'};
       } else if (text === 'off') {
         config.AUTO_RECODING = false;
         responseMessage = "❌ *Auto-Recoding has been disabled.*";
-        buttonText = {displayText: '✅ ENABLE'};
+        buttonText = {displayText: '𝘌𝘕𝘈𝘉𝘓𝘌 ✅'};
       }
 
       // Create a button to toggle the opposite state
