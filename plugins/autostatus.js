@@ -20,19 +20,19 @@ const anticallCommand = async (m, Matrix) => {
       config.AUTO_STATUS_SEEN = true;
       responseMessage = "✅ *AUTO STATUS SEEN has been enabled.*";
       buttons = [
-        { buttonId: `${prefix + cmd} off`, buttonText: { displayText: '🔴 Turn Off' }, type: 1 }
+        { buttonId: `${prefix + cmd} off`, buttonText: { displayText: '𝘛𝘜𝘙𝘕 𝘖𝘍𝘍 🔴' }, type: 1 }
       ];
     } else if (text === 'off') {
       config.AUTO_STATUS_SEEN = false;
       responseMessage = "❌ *AUTO STATUS SEEN has been disabled.*";
       buttons = [
-        { buttonId: `${prefix + cmd} on`, buttonText: { displayText: '🟢 Turn On' }, type: 1 }
+        { buttonId: `${prefix + cmd} on`, buttonText: { displayText: '𝘛𝘜𝘙𝘕 𝘖𝘕 🟢' }, type: 1 }
       ];
     } else {
       responseMessage = `🔧 *AUTO STATUS SEEN SETTINGS*\n\nUsage:\n- *${prefix + cmd} on:* Enable AUTO STATUS VIEW\n- *${prefix + cmd} off:* Disable AUTO STATUS SEEN`;
       buttons = [
-        { buttonId: `${prefix + cmd} on`, buttonText: { displayText: '🟢 Turn On' }, type: 1 },
-        { buttonId: `${prefix + cmd} off`, buttonText: { displayText: '🔴 Turn Off' }, type: 1 }
+        { buttonId: `${prefix + cmd} on`, buttonText: { displayText: '𝘛𝘜𝘙𝘕 𝘖𝘕 🟢' }, type: 1 },
+        { buttonId: `${prefix + cmd} off`, buttonText: { displayText: '𝘛𝘜𝘙𝘕 𝘖𝘍𝘍 🔴' }, type: 1 }
       ];
     }
 
