@@ -224,243 +224,203 @@ ${readmore}
       let menuResponse;
 
       switch (cmd) {
-  case "download-menu":
-    menuTitle = "📥 Download Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-        📥 DOWNLOAD MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".apk")} → 📱 Download APK files
-🔹 ${toFancyFont(".facebook")} → 📘 Download from Facebook
-🔹 ${toFancyFont(".mediafire")} → 📂 Download from Mediafire
-🔹 ${toFancyFont(".pinterest")} → 📌 Download from Pinterest
-🔹 ${toFancyFont(".gitclone")} → 🌀 Clone git repositories
-🔹 ${toFancyFont(".gdrive")} → ☁️ Google Drive
-🔹 ${toFancyFont(".insta")} → 📷 Instagram content
-🔹 ${toFancyFont(".ytmp3")} → 🎵 YouTube to MP3
-🔹 ${toFancyFont(".ytmp4")} → 🎬 YouTube to MP4
-🔹 ${toFancyFont(".play")} → 🎶 Play music
-🔹 ${toFancyFont(".song")} → 🎼 Download songs
-🔹 ${toFancyFont(".video")} → 📺 Download videos
-🔹 ${toFancyFont(".ytmp3doc")} → 📑 YouTube MP3 (doc)
-🔹 ${toFancyFont(".ytmp4doc")} → 📑 YouTube MP4 (doc)
-🔹 ${toFancyFont(".tiktok")} → 🎭 TikTok videos
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "download-menu":
+          menuTitle = "📥 Download Menu";
+          menuResponse = `
+${toFancyFont(".apk")} - Download APK files
+${toFancyFont(".facebook")} - Download from Facebook
+${toFancyFont(".mediafire")} - Download from Mediafire
+${toFancyFont(".pinterest")} - Download from Pinterest
+${toFancyFont(".gitclone")} - Clone git repositories
+${toFancyFont(".gdrive")} - Download from Google Drive
+${toFancyFont(".insta")} - Download Instagram content
+${toFancyFont(".ytmp3")} - YouTube to MP3
+${toFancyFont(".ytmp4")} - YouTube to MP4
+${toFancyFont(".play")} - Play music
+${toFancyFont(".song")} - Download songs
+${toFancyFont(".video")} - Download videos
+${toFancyFont(".ytmp3doc")} - YouTube to MP3 (document)
+${toFancyFont(".ytmp4doc")} - YouTube to MP4 (document)
+${toFancyFont(".tiktok")} - Download TikTok videos
 `;
-    break;
+          break;
 
-  case "group-menu":
-    menuTitle = "👥 Group Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-        👥 GROUP MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".linkgroup")} → 🔗 Group invite link
-🔹 ${toFancyFont(".setppgc")} → 🖼️ Set group picture
-🔹 ${toFancyFont(".setname")} → ✏️ Set group name
-🔹 ${toFancyFont(".setdesc")} → 📃 Set description
-🔹 ${toFancyFont(".group")} → ⚙️ Group management
-🔹 ${toFancyFont(".gcsetting")} → 🔒 Group settings
-🔹 ${toFancyFont(".welcome")} → 👋 Welcome settings
-🔹 ${toFancyFont(".add")} → ➕ Add members
-🔹 ${toFancyFont(".kick")} → ➖ Remove members
-🔹 ${toFancyFont(".hidetag")} → 👀 Hidden tag
-🔹 ${toFancyFont(".tagall")} → 🏷️ Tag all members
-🔹 ${toFancyFont(".antilink")} → 🚫 Anti-link
-🔹 ${toFancyFont(".antitoxic")} → 🚫 Anti-toxic
-🔹 ${toFancyFont(".promote")} → ⬆️ Promote members
-🔹 ${toFancyFont(".demote")} → ⬇️ Demote members
-🔹 ${toFancyFont(".getbio")} → 📜 Get user bio
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "group-menu":
+          menuTitle = "👥 Group Menu";
+          menuResponse = `
+${toFancyFont(".linkgroup")} - Get group invite link
+${toFancyFont(".setppgc")} - Set group profile picture
+${toFancyFont(".setname")} - Set group name
+${toFancyFont(".setdesc")} - Set group description
+${toFancyFont(".group")} - Group management
+${toFancyFont(".gcsetting")} - Group settings
+${toFancyFont(".welcome")} - Welcome settings
+${toFancyFont(".add")} - Add members
+${toFancyFont(".kick")} - Remove members
+${toFancyFont(".hidetag")} - Hidden tag
+${toFancyFont(".tagall")} - Tag all members
+${toFancyFont(".antilink")} - Anti-link settings
+${toFancyFont(".antitoxic")} - Anti-toxic settings
+${toFancyFont(".promote")} - Promote members
+${toFancyFont(".demote")} - Demote members
+${toFancyFont(".getbio")} - Get user bio
 `;
-    break;
+          break;
 
-  case "fun-menu":
-    menuTitle = "🎉 Fun Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-        🎉 FUN MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".gay")} → 🌈 Gay rate checker
-🔹 ${toFancyFont(".simp")} → 😍 Simp rate checker
-🔹 ${toFancyFont(".handsome")} → 😎 Handsome rate
-🔹 ${toFancyFont(".stupid")} → 🤪 Stupid rate
-🔹 ${toFancyFont(".character")} → 👤 Character analyzer
-🔹 ${toFancyFont(".fact")} → 📚 Random facts
-🔹 ${toFancyFont(".truth")} → ❓ Truth questions
-🔹 ${toFancyFont(".dare")} → 🎯 Dare challenges
-🔹 ${toFancyFont(".flirt")} → 💌 Flirty messages
-🔹 ${toFancyFont(".couple")} → 💑 Couple matching
-🔹 ${toFancyFont(".ship")} → 🚢 Ship two people
-🔹 ${toFancyFont(".joke")} → 😂 Random jokes
-🔹 ${toFancyFont(".meme")} → 🖼️ Random memes
-🔹 ${toFancyFont(".quote")} → 💡 Inspirational quotes
-🔹 ${toFancyFont(".roll")} → 🎲 Roll a dice
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "fun-menu":
+          menuTitle = "🎉 Fun Menu";
+          menuResponse = `
+${toFancyFont(".gay")} - Gay rate checker
+${toFancyFont(".simp")} - Simp rate checker
+${toFancyFont(".handsome")} - Handsome rate
+${toFancyFont(".stupid")} - Stupid rate
+${toFancyFont(".character")} - Character analyzer
+${toFancyFont(".fact")} - Random facts
+${toFancyFont(".truth")} - Truth questions
+${toFancyFont(".dare")} - Dare challenges
+${toFancyFont(".flirt")} - Flirty messages
+${toFancyFont(".couple")} - Couple matching
+${toFancyFont(".ship")} - Ship two people
+${toFancyFont(".joke")} - Random jokes
+${toFancyFont(".meme")} - Random memes
+${toFancyFont(".quote")} - Inspirational quotes
+${toFancyFont(".roll")} - Roll a dice
 `;
-    break;
+          break;
 
-  case "owner-menu":
-    menuTitle = "👑 Owner Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-        👑 OWNER MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".join")} → ➕ Join group
-🔹 ${toFancyFont(".leave")} → 🚪 Leave group
-🔹 ${toFancyFont(".block")} → ⛔ Block user
-🔹 ${toFancyFont(".unblock")} → ✅ Unblock user
-🔹 ${toFancyFont(".setppbot")} → 🤖 Bot picture
-🔹 ${toFancyFont(".anticall")} → 📵 Anti-call
-🔹 ${toFancyFont(".setstatus")} → 📝 Bot status
-🔹 ${toFancyFont(".setnamebot")} → ✨ Bot name
-🔹 ${toFancyFont(".autorecording")} → 🎙️ Auto record
-🔹 ${toFancyFont(".autolike")} → ❤️ Auto like
-🔹 ${toFancyFont(".autotyping")} → ⌨️ Auto typing
-🔹 ${toFancyFont(".alwaysonline")} → 🌐 Always online
-🔹 ${toFancyFont(".autoread")} → 👀 Auto read
-🔹 ${toFancyFont(".autosview")} → 📖 Auto view stories
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "owner-menu":
+          menuTitle = "👑 Owner Menu";
+          menuResponse = `
+${toFancyFont(".join")} - Join group via link
+${toFancyFont(".leave")} - Leave group
+${toFancyFont(".block")} - Block user
+${toFancyFont(".unblock")} - Unblock user
+${toFancyFont(".setppbot")} - Set bot profile picture
+${toFancyFont(".anticall")} - Anti-call settings
+${toFancyFont(".setstatus")} - Set bot status
+${toFancyFont(".setnamebot")} - Set bot name
+${toFancyFont(".autorecording")} - Auto voice recording
+${toFancyFont(".autolike")} - Auto like messages
+${toFancyFont(".autotyping")} - Auto typing indicator
+${toFancyFont(".alwaysonline")} - Always online mode
+${toFancyFont(".autoread")} - Auto read messages
+${toFancyFont(".autosview")} - Auto view stories
 `;
-    break;
+          break;
 
-  case "ai-menu":
-    menuTitle = "🤖 AI Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-        🤖 AI MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".ai")} → 💬 AI chat
-🔹 ${toFancyFont(".bug")} → 🐞 Report bugs
-🔹 ${toFancyFont(".report")} → 📩 Report issues
-🔹 ${toFancyFont(".gpt")} → 🧠 ChatGPT
-🔹 ${toFancyFont(".dall")} → 🎨 DALL-E Images
-🔹 ${toFancyFont(".remini")} → 🖼️ Image enhance
-🔹 ${toFancyFont(".gemini")} → 🌐 Google Gemini
-🔹 ${toFancyFont(".bard")} → 🎭 Google Bard
-🔹 ${toFancyFont(".blackbox")} → ⚫ Blackbox AI
-🔹 ${toFancyFont(".mistral")} → 🌪️ Mistral AI
-🔹 ${toFancyFont(".llama")} → 🦙 LLaMA AI
-🔹 ${toFancyFont(".claude")} → 🤖 Claude AI
-🔹 ${toFancyFont(".deepseek")} → 🔎 DeepSeek AI
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "ai-menu":
+          menuTitle = "🤖 AI Menu";
+          menuResponse = `
+${toFancyFont(".ai")} - AI chat
+${toFancyFont(".bug")} - Report bugs
+${toFancyFont(".report")} - Report issues
+${toFancyFont(".gpt")} - ChatGPT
+${toFancyFont(".dall")} - DALL-E image generation
+${toFancyFont(".remini")} - Image enhancement
+${toFancyFont(".gemini")} - Google Gemini
+${toFancyFont(".bard")} - Google Bard
+${toFancyFont(".blackbox")} - Blackbox AI
+${toFancyFont(".mistral")} - Mistral AI
+${toFancyFont(".llama")} - LLaMA AI
+${toFancyFont(".claude")} - Claude AI
+${toFancyFont(".deepseek")} - DeepSeek AI
 `;
-    break;
+          break;
 
-  case "anime-menu":
-    menuTitle = "🌸 Anime Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-        🌸 ANIME MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".anime")} → 🎌 Random anime info
-🔹 ${toFancyFont(".animepic")} → 🖼️ Anime pictures
-🔹 ${toFancyFont(".animequote")} → 💬 Anime quotes
-🔹 ${toFancyFont(".animewall")} → 🖼️ Wallpapers
-🔹 ${toFancyFont(".animechar")} → 👤 Character search
-🔹 ${toFancyFont(".waifu")} → 💕 Random waifu
-🔹 ${toFancyFont(".husbando")} → 👦 Husbando
-🔹 ${toFancyFont(".neko")} → 🐱 Neko pics
-🔹 ${toFancyFont(".shinobu")} → 🌸 Shinobu
-🔹 ${toFancyFont(".megumin")} → 💥 Megumin
-🔹 ${toFancyFont(".awoo")} → 🐺 Awoo pics
-🔹 ${toFancyFont(".trap")} → 👦 Trap chars
-🔹 ${toFancyFont(".blowjob")} → 🔞 NSFW
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "anime-menu":
+          menuTitle = "🌸 Anime Menu";
+          menuResponse = `
+${toFancyFont(".anime")} - Random anime info
+${toFancyFont(".animepic")} - Random anime pictures
+${toFancyFont(".animequote")} - Anime quotes
+${toFancyFont(".animewall")} - Anime wallpapers
+${toFancyFont(".animechar")} - Anime character search
+${toFancyFont(".waifu")} - Random waifu
+${toFancyFont(".husbando")} - Random husbando
+${toFancyFont(".neko")} - Neko girls
+${toFancyFont(".shinobu")} - Shinobu pictures
+${toFancyFont(".megumin")} - Megumin pictures
+${toFacyFont(".awoo")} - Awoo girls
+${toFancyFont(".trap")} - Trap characters
+${toFancyFont(".blowjob")} - NSFW content
 `;
-    break;
+          break;
 
-  case "converter-menu":
-    menuTitle = "🔄 Converter Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-      🔄 CONVERTER MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".attp")} → 🖊️ Text to sticker
-🔹 ${toFancyFont(".attp2")} → ✨ Sticker style 2
-🔹 ${toFancyFont(".attp3")} → 🎨 Sticker style 3
-🔹 ${toFancyFont(".ebinary")} → 🔢 Encode binary
-🔹 ${toFancyFont(".dbinary")} → 🔢 Decode binary
-🔹 ${toFancyFont(".emojimix")} → 😀 Emoji mix
-🔹 ${toFancyFont(".mp3")} → 🎵 Convert to MP3
-🔹 ${toFancyFont(".mp4")} → 🎬 Convert to MP4
-🔹 ${toFancyFont(".sticker")} → 🖼️ Image to sticker
-🔹 ${toFancyFont(".toimg")} → 🖼️ Sticker to image
-🔹 ${toFancyFont(".tovid")} → 🎞️ GIF to video
-🔹 ${toFancyFont(".togif")} → 🎞️ Video to GIF
-🔹 ${toFancyFont(".tourl")} → 🌐 Media to URL
-🔹 ${toFancyFont(".tinyurl")} → 🔗 URL shortener
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "converter-menu":
+          menuTitle = "🔄 Converter Menu";
+          menuResponse = `
+${toFancyFont(".attp")} - Text to sticker
+${toFancyFont(".attp2")} - Text to sticker (style 2)
+${toFancyFont(".attp3")} - Text to sticker (style 3)
+${toFancyFont(".ebinary")} - Encode binary
+${toFancyFont(".dbinary")} - Decode binary
+${toFancyFont(".emojimix")} - Mix two emojis
+${toFancyFont(".mp3")} - Convert to MP3
+${toFancyFont(".mp4")} - Convert to MP4
+${toFancyFont(".sticker")} - Image to sticker
+${toFancyFont(".toimg")} - Sticker to image
+${toFancyFont(".tovid")} - GIF to video
+${toFancyFont(".togif")} - Video to GIF
+${toFancyFont(".tourl")} - Media to URL
+${toFancyFont(".tinyurl")} - URL shortener
 `;
-    break;
+          break;
 
-  case "other-menu":
-    menuTitle = "📌 Other Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-       📌 OTHER MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".calc")} → 🧮 Calculator
-🔹 ${toFancyFont(".tempmail")} → 📧 Temp mail
-🔹 ${toFancyFont(".checkmail")} → 📬 Check mail
-🔹 ${toFancyFont(".trt")} → 🌍 Translate
-🔹 ${toFancyFont(".tts")} → 🔊 Text to speech
-🔹 ${toFancyFont(".ssweb")} → 🖥️ Web screenshot
-🔹 ${toFancyFont(".readmore")} → 📖 Read more
-🔹 ${toFancyFont(".styletext")} → ✨ Stylish text
-🔹 ${toFancyFont(".weather")} → 🌦️ Weather info
-🔹 ${toFancyFont(".clock")} → ⏰ World clock
-🔹 ${toFancyFont(".qrcode")} → 🧾 QR generator
-🔹 ${toFancyFont(".readqr")} → 📷 QR reader
-🔹 ${toFancyFont(".currency")} → 💱 Currency
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "other-menu":
+          menuTitle = "📌 Other Menu";
+          menuResponse = `
+${toFancyFont(".calc")} - Calculator
+${toFancyFont(".tempmail")} - Temp email
+${toFancyFont(".checkmail")} - Check temp mail
+${toFancyFont(".trt")} - Translate text
+${toFancyFont(".tts")} - Text to speech
+${toFancyFont(".ssweb")} - Website screenshot
+${toFancyFont(".readmore")} - Create read more
+${toFancyFont(".styletext")} - Stylish text
+${toFancyFont(".weather")} - Weather info
+${toFancyFont(".clock")} - World clock
+${toFancyFont(".qrcode")} - Generate QR code
+${toFancyFont(".readqr")} - Read QR code
+${toFancyFont(".currency")} - Currency converter
 `;
-    break;
+          break;
 
-  case "reactions-menu":
-    menuTitle = "🎭 Reactions Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-      🎭 REACTIONS MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".like")} → 👍 Like
-🔹 ${toFancyFont(".love")} → ❤️ Love
-🔹 ${toFancyFont(".haha")} → 😆 Haha
-🔹 ${toFancyFont(".wow")} → 😮 Wow
-🔹 ${toFancyFont(".sad")} → 😢 Sad
-🔹 ${toFancyFont(".angry")} → 😡 Angry
-🔹 ${toFancyFont(".dislike")} → 👎 Dislike
-🔹 ${toFancyFont(".cry")} → 😭 Cry
-🔹 ${toFancyFont(".kiss")} → 💋 Kiss
-🔹 ${toFancyFont(".pat")} → 🤗 Pat
-🔹 ${toFancyFont(".slap")} → 👋 Slap
-🔹 ${toFancyFont(".punch")} → 👊 Punch
-🔹 ${toFancyFont(".kill")} → 🔪 Kill
-🔹 ${toFancyFont(".hug")} → 🤗 Hug
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "reactions-menu":
+          menuTitle = "🎭 Reactions Menu";
+          menuResponse = `
+${toFancyFont(".like")} - Like reaction
+${toFancyFont(".love")} - Love reaction
+${toFancyFont(".haha")} - Haha reaction
+${toFancyFont(".wow")} - Wow reaction
+${toFancyFont(".sad")} - Sad reaction
+${toFancyFont(".angry")} - Angry reaction
+${toFancyFont(".dislike")} - Dislike reaction
+${toFancyFont(".cry")} - Cry reaction
+${toFancyFont(".kiss")} - Kiss reaction
+${toFancyFont(".pat")} - Pat reaction
+${toFancyFont(".slap")} - Slap reaction
+${toFancyFont(".punch")} - Punch reaction
+${toFancyFont(".kill")} - Kill reaction
+${toFancyFont(".hug")} - Hug reaction
 `;
-    break;
+          break;
 
-  case "main-menu":
-    menuTitle = "🏠 Main Menu";
-    menuResponse = `
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-        🏠 MAIN MENU
-🟢━━━━━━━━━━━━━━━━━━━━🟢
-🔹 ${toFancyFont(".ping")} → 📶 Bot response
-🔹 ${toFancyFont(".alive")} → 💚 Check alive
-🔹 ${toFancyFont(".owner")} → 👑 Owner info
-🔹 ${toFancyFont(".menu")} → 📜 Show menu
-🔹 ${toFancyFont(".infobot")} → 🤖 Bot info
-🔹 ${toFancyFont(".donate")} → 💰 Support bot
-🔹 ${toFancyFont(".speed")} → ⚡ Speed test
-🔹 ${toFancyFont(".runtime")} → ⏱️ Uptime
-🔹 ${toFancyFont(".sc")} → 💻 Source code
-🔹 ${toFancyFont(".script")} → 📂 Script info
-🔹 ${toFancyFont(".support")} → 🛠️ Support group
-🔹 ${toFancyFont(".update")} → 🔄 Updates
-🔹 ${toFancyFont(".feedback")} → 📨 Feedback
-🟢━━━━━━━━━━━━━━━━━━━━🟢
+        case "main-menu":
+          menuTitle = "🏠 Main Menu";
+          menuResponse = `
+${toFancyFont(".ping")} - Check bot response time
+${toFancyFont(".alive")} - Check if bot is running
+${toFancyFont(".owner")} - Contact owner
+${toFancyFont(".menu")} - Show this menu
+${toFancyFont(".infobot")} - Bot information
+${toFancyFont(".donate")} - Support the bot
+${toFancyFont(".speed")} - Speed test
+${toFancyFont(".runtime")} - Bot uptime
+${toFancyFont(".sc")} - Source code
+${toFancyFont(".script")} - Script info
+${toFancyFont(".support")} - Support group
+${toFancyFont(".update")} - Check updates
+${toFancyFont(".feedback")} - Send feedback
 `;
           break;
 
