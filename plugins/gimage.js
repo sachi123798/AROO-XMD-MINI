@@ -44,7 +44,7 @@ const imageCommand = async (m, sock) => {
 ╭───[ *ɪᴍᴀɢᴇ sᴇᴀʀᴄʜ* ]───
 ├ *ǫᴜᴇʀʏ*: ${query} 🔍
 ├ *ʀᴇsᴜʟᴛ*: ${index + 1} of ${maxImages} 🖼️
-╰───[ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄᴀsᴇʏʀʜᴏᴅᴇs* ]───`;
+╰───[ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙱𝙻𝙾𝙾𝙳 𝚇𝙼𝙳 𝙼𝙸𝙽𝙸* ]───`;
 
           await sock.sendMessage(
             m.from,
@@ -56,8 +56,8 @@ const imageCommand = async (m, sock) => {
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363302677217436@newsletter',
-                  newsletterName: 'POWERED BY CASEYRHODES TECH',
+                  newsletterJid: '120363419102725912@newsletter',
+                  newsletterName: 'POWERED BY BLOOD XMD MINI',
                   serverMessageId: -1
                 }
               }
