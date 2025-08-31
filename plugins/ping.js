@@ -28,7 +28,7 @@ const ping = async (m, Matrix) => {
     // ======================
     // CONTENT DEFINITION
     // ======================
-    const imageUrl = "https://i.ibb.co/fGSVG8vJ/caseyweb.jpg";
+    const imageUrl = "https://files.catbox.moe/kc86ar.jpg";
     const text = `*👁️‍🗨️ BLOOD-XMD* : ${responseTime.toFixed(2)} s`;
     
     // ======================
@@ -38,28 +38,28 @@ const ping = async (m, Matrix) => {
       // Download category
       {
         buttonId: `${prefix}owner`,
-        buttonText: { displayText: "👑 Owner" },
+        buttonText: { displayText: "𝘖𝘞𝘕𝘌𝘙 👑" },
         type: 1
       },
       
       // Group category
       {
         buttonId: `${prefix}system`,
-        buttonText: { displayText: "📑 System" },
+        buttonText: { displayText: "𝘚𝘠𝘚𝘛𝘌𝘔 📑" },
         type: 1
       },
       
       // Fun category
       {
         buttonId: `${prefix}fun-menu`,
-        buttonText: { displayText: "👁️‍🗨️ Ping" },
+        buttonText: { displayText: "𝘗𝘐𝘕𝘎 👁️‍🗨️" },
         type: 1
       },
       
       // Owner category
       {
         buttonId: `${prefix}alive`,
-        buttonText: { displayText: "🫟 Alive" },
+        buttonText: { displayText: "𝘈𝘓𝘐𝘝𝘌 ⛓️" },
         type: 1
       }
     ];
