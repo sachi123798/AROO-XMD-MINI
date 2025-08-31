@@ -14,13 +14,13 @@ const autoreactCommand = async (m, Matrix) => {
       // If no argument provided, show buttons
       if (!text || (text !== 'on' && text !== 'off')) {
         const buttons = [
-          {buttonId: `${prefix}autoreact on`, buttonText: {displayText: '✅ ENABLE'}, type: 1},
-          {buttonId: `${prefix}autoreact off`, buttonText: {displayText: '❌ DISABLE'}, type: 1}
+          {buttonId: `${prefix}autoreact on`, buttonText: {displayText: '𝘌𝘕𝘈𝘉𝘓𝘌 ✅'}, type: 1},
+          {buttonId: `${prefix}autoreact off`, buttonText: {displayText: '𝘋𝘐𝘚𝘈𝘉𝘓𝘌 ❌'}, type: 1}
         ];
         
         const buttonMessage = {
-          text: "🎛️ *AUTO-REACT SETTINGS*\n\nSelect an option:",
-          footer: "Bot Owner Only",
+          text: "*𝘈𝘜𝘛𝘖-𝘙𝘌𝘈𝘊𝘛 𝘚𝘌𝘛𝘛𝘐𝘕𝘎𝘚 🎛️*\n\n> Select an option:",
+          footer: "> Bot Owner Only",
           buttons: buttons,
           headerType: 1
         };
@@ -35,11 +35,11 @@ const autoreactCommand = async (m, Matrix) => {
       if (text === 'on') {
         config.AUTO_REACT = true;
         responseMessage = "✅ *Auto-React has been enabled.*\n\nThe bot will now automatically react to messages.";
-        buttonText = {displayText: '❌ DISABLE'};
+        buttonText = {displayText: '𝘋𝘐𝘚𝘈𝘉𝘓𝘌 ❌'};
       } else if (text === 'off') {
         config.AUTO_REACT = false;
         responseMessage = "❌ *Auto-React has been disabled.*\n\nThe bot will no longer automatically react to messages.";
-        buttonText = {displayText: '✅ ENABLE'};
+        buttonText = {displayText: '𝘌𝘕𝘈𝘉𝘓𝘌 ✅'};
       }
 
       // Create a button to toggle the opposite state
