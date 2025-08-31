@@ -52,13 +52,13 @@ const alive = async (m, Matrix) => {
                 // Menu button clicked - send menu command
                 // You might need to import or call your menu function here
                 await Matrix.sendMessage(m.from, { 
-                    text: '📋 Opening menu...' 
+                    text: '*📋 Opening menu...*' 
                 }, { quoted: m });
                 return;
             } else if (selectedButtonId === `${prefix}repo`) {
                 // Repository button clicked
                 await Matrix.sendMessage(m.from, { 
-                    text: '📁 Repository: https://github.com/your-username/your-repo' 
+                    text: '*📁 Repository: https://github.com/your-username/your-repo*' 
                 }, { quoted: m });
                 return;
             }
@@ -84,12 +84,12 @@ const alive = async (m, Matrix) => {
         const buttons = [
             {
                 buttonId: `${prefix}repo`,
-                buttonText: { displayText: `📁 ${prefix}repo` },
+                buttonText: { displayText: `${prefix}𝘙𝘌𝘗𝘖 💨` },
                 type: 1
             },
             {
                 buttonId: `${prefix}menu`,
-                buttonText: { displayText: `📋 ${prefix}menu` },
+                buttonText: { displayText: `${prefix}𝘔𝘌𝘕𝘜 📄` },
                 type: 1
             }
         ];
@@ -111,8 +111,8 @@ const alive = async (m, Matrix) => {
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363302677217436@newsletter',
-                    newsletterName: 'POWERED BY CASEYRHODES TECH',
+                    newsletterJid: '120363419102725912@newsletter',
+                    newsletterName: 'POWERED BY BLOOD-XMD MINI BOT',
                     serverMessageId: -1
                 }
             }
