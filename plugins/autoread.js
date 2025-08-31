@@ -14,12 +14,12 @@ const autoreadCommand = async (m, Matrix) => {
       // If no argument provided, show buttons
       if (!text || (text !== 'on' && text !== 'off')) {
         const buttons = [
-          {buttonId: `${prefix}autoread on`, buttonText: {displayText: '✅ ENABLE'}, type: 1},
-          {buttonId: `${prefix}autoread off`, buttonText: {displayText: '❌ DISABLE'}, type: 1}
+          {buttonId: `${prefix}autoread on`, buttonText: {displayText: '𝘌𝘕𝘈𝘉𝘓𝘌 ✅'}, type: 1},
+          {buttonId: `${prefix}autoread off`, buttonText: {displayText: '𝘋𝘐𝘚𝘈𝘉𝘓𝘌 ❌'}, type: 1}
         ];
         
         const buttonMessage = {
-          text: "🎛️ *AUTO-READ SETTINGS*\n\nSelect an option:",
+          text: "*𝘈𝘜𝘛𝘖-𝘙𝘌𝘈𝘋 𝘚𝘌𝘛𝘛𝘐𝘕𝘎𝘚 🎛️*\n\n> Select an option:",
           footer: "Bot Owner Only",
           buttons: buttons,
           headerType: 1
@@ -35,11 +35,11 @@ const autoreadCommand = async (m, Matrix) => {
       if (text === 'on') {
         config.AUTO_READ = true;
         responseMessage = "✅ *Auto-Read has been enabled.*";
-        buttonText = {displayText: '❌ DISABLE'};
+        buttonText = {displayText: '𝘋𝘐𝘚𝘈𝘉𝘓𝘌 ❌'};
       } else if (text === 'off') {
         config.AUTO_READ = false;
         responseMessage = "❌ *Auto-Read has been disabled.*";
-        buttonText = {displayText: '✅ ENABLE'};
+        buttonText = {displayText: '𝘌𝘕𝘈𝘉𝘓𝘌 ✅'};
       }
 
       // Create a button to toggle the opposite state
