@@ -19,7 +19,7 @@ const autorecodingCommand = async (m, Matrix) => {
         ];
         
         const buttonMessage = {
-          text: "🎛️ *AUTO-RECODING SETTINGS*\n\nSelect an option:",
+          text: "*𝘈𝘜𝘛𝘖-𝘙𝘌𝘊𝘖𝘙𝘋𝘐𝘕𝘎 𝘚𝘌𝘛𝘛𝘐𝘕𝘎 🎛️*\n\n> Select an option:",
           footer: "Bot Owner Only",
           buttons: buttons,
           headerType: 1
