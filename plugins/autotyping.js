@@ -13,8 +13,8 @@ const autotypingCommand = async (m, Matrix) => {
     // If no argument is provided, show buttons
     if (!text || (text !== 'on' && text !== 'off')) {
       const buttons = [
-        { buttonId: `${prefix}autotyping on`, buttonText: { displayText: '🟢 Enable' }, type: 1 },
-        { buttonId: `${prefix}autotyping off`, buttonText: { displayText: '🔴 Disable' }, type: 1 }
+        { buttonId: `${prefix}autotyping on`, buttonText: { displayText: '𝘌𝘕𝘈𝘉𝘓𝘌 🟢' }, type: 1 },
+        { buttonId: `${prefix}autotyping off`, buttonText: { displayText: '𝘋𝘐𝘚𝘈𝘉𝘓𝘌 🔴' }, type: 1 }
       ];
       
       const buttonMessage = {
