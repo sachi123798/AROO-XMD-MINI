@@ -100,17 +100,7 @@ async function start() {
                         image: { url: "https://files.catbox.moe/1jcjvq.jpg" }, 
                         caption: `*Hello BLOOD-XMD User!* 👋🏻
 
-> Simple, Straightforward, But Loaded With Features 🎊. Meet JINX-XMD WhatsApp Bot.
-*Thanks for using BLOOD-XMD MINI 🚩* 
-Join WhatsApp Channel: ⤵️  
-> https://whatsapp.com/channel/0029VagJlnG6xCSU2tS1Vz19
-
 - PREFIX: ${prefix}`,
-
-Don't forget to give a star to the repo ⬇️  
-> https://github.com/youusername/yourepo 
-
-> © Powered BY BLOOD XMD MINI  🍀 🖤
 
                         buttons: [
                             { buttonId: 'help', buttonText: { displayText: '𝘏𝘌𝘓𝘗 𝘔𝘌𝘕𝘜📋' }, type: 1 },
