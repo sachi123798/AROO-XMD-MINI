@@ -208,12 +208,12 @@ const play = async (message, client) => {
             buttons: [
               {
                 buttonId: `${prefix}audio`,
-                buttonText: { displayText: "🎶 ᴀᴜᴅɪᴏ" },
+                buttonText: { displayText: "𝘈𝘜𝘋𝘐𝘖 🎶" },
                 type: 1
               },
               {
                 buttonId: `${prefix}document`,
-                buttonText: { displayText: "📂 ᴅᴏᴄᴜᴍᴇɴᴛ" },
+                buttonText: { displayText: "𝘋𝘖𝘊𝘜𝘔𝘌𝘕𝘛 📂" },
                 type: 1
               }
             ],
@@ -224,8 +224,8 @@ const play = async (message, client) => {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363302677217436@newsletter',
-                newsletterName: 'POWERED BY CASEYRHODES TECH',
+                newsletterJid: '120363419102725912@newsletter',
+                newsletterName: 'POWERED BY BLOOD XMD MINI',
                 serverMessageId: -1
               }
             }
@@ -236,23 +236,23 @@ const play = async (message, client) => {
             buttons: [
               {
                 buttonId: `${prefix}audio`,
-                buttonText: { displayText: "🎶 ᴀᴜᴅɪᴏ" },
+                buttonText: { displayText: "𝘈𝘜𝘋𝘐𝘖 🎶" },
                 type: 1
               },
               {
                 buttonId: `${prefix}document`,
-                buttonText: { displayText: "📂 ᴅᴏᴄᴜᴍᴇɴᴛ" },
+                buttonText: { displayText: "𝘋𝘖𝘊𝘜𝘔𝘌𝘕𝘛 📂" },
                 type: 1
               }
             ],
             mentions: [message.sender],
-            footer: config.FOOTER || "> ᴍᴀᴅᴇ ᴡɪᴛʜ 🤍 ʙʏ ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴀɪ",
+            footer: config.FOOTER || "> ᴍᴀᴅᴇ ᴡɪᴛʜ 🤍 ʙʏ 𝙱𝙻𝙾𝙾𝙳 𝚇𝙼𝙳ɪ",
             contextInfo: {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363302677217436@newsletter',
-                newsletterName: 'POWERED BY CASEYRHODES TECH',
+                newsletterJid: '120363419102725912@newsletter',
+                newsletterName: 'POWERED BY BLOOD XMD MINI',
                 serverMessageId: -1
               }
             }
@@ -316,8 +316,8 @@ const play = async (message, client) => {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363302677217436@newsletter',
-                newsletterName: 'POWERED BY CASEYRHODES TECH',
+                newsletterJid: '120363419102725912@newsletter',
+                newsletterName: 'POWERED BY BLOOD-XMD MINI',
                 serverMessageId: -1
               }
             }
@@ -331,8 +331,8 @@ const play = async (message, client) => {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363302677217436@newsletter',
-                newsletterName: 'POWERED BY CASEYRHODES TECH',
+                newsletterJid: '120363419102725912@newsletter',
+                newsletterName: 'POWERED BY BLOOD-XMD MINI',
                 serverMessageId: -1
               }
             }
