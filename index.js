@@ -99,8 +99,17 @@ async function start() {
                     const startMess = {
                         image: { url: "https://files.catbox.moe/1jcjvq.jpg" }, 
                         caption: `*Hello BLOOD-XMD User!* 👋🏻
-- PREFIX: ${prefix}`,
 
+> Simple, Straightforward, But Loaded With Features 🎊. Meet BLOOD-XMD  WhatsApp mini Bot.
+*Thanks for using BLOOD-XMD  mini bot  🚩* 
+Join WhatsApp Channel: ⤵️  
+> https://whatsapp.com/channel/0029Vb5hLc0HltYF7Ebf2S0M
+
+- *YOUR PREFIX:* = ${prefix}
+
+Don't forget to give a star to the repo ⬇️  
+> https://github.com/caseyweb/CASEYRHODES-XMD
+> © Powered BY CASEYRHODES TECH 🍀 🖤`,
                         buttons: [
                             { buttonId: 'help', buttonText: { displayText: '𝘏𝘌𝘓𝘗 𝘔𝘌𝘕𝘜📋' }, type: 1 },
                             { buttonId: 'menu', buttonText: { displayText: '𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 🧮' }, type: 1 },
