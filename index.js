@@ -100,6 +100,19 @@ async function start() {
                         image: { url: "https://files.catbox.moe/1jcjvq.jpg" }, 
                         caption: `*Hello BLOOD-XMD User!* 👋🏻
 
+*ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇsғᴜʟʟʏ🎉✅*
+> Simple , Straight Forward But Loaded With Features, 
+ Meet *BLOOD-XMD* WhatsApp Bot🌟
+
+*Thanks for using BLOOD - XMD* 
+*Join WhatsApp Channel :- ⤵️*
+> https://whatsapp.com/channel/0029Vb5hLc0HltYF7Ebf2S0M
+*ʏᴏᴜʀ ᴘʀᴇғɪx : .*
+*Dont forget to give star to repo ⬇️*🌟
+> https://github.com
+
+> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙʟᴏᴏᴅ xᴍᴅ*
+
 - PREFIX: ${prefix}`,
 
                         buttons: [
