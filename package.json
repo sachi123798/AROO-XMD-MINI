@@ -1,19 +1,20 @@
 {
   "name": "Caseyrhodes-AI",
   "version": "10.8.1",
-  "description": "Caseyrhodes-AI latest multi device whatsapp bot",
+  "description": "Caseyrhodes-AI latest multi device WhatsApp bot",
   "main": "index.js",
   "engines": {
-  "node": ">=20.x",
-  "npm": ">=10.x"
+    "node": ">=20.x",
+    "npm": ">=10.x"
   },
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Caseyrhodes-AI",
-    "stop": "pm2 stop ",
-    "restart": "pm2 restart Caseyrhodes-AI"
+    "start": "pm2 start index.js --name Caseyrhodes-AI --watch",
+    "stop": "pm2 stop Caseyrhodes-AI",
+    "restart": "pm2 restart Caseyrhodes-AI",
+    "deploy": "npm install && pm2 start index.js --name Caseyrhodes-AI --watch && pm2 save"
   },
-  "keywords": ["Caseyrhodes-AI", "whatsapp-bot", "whatsapp md bot"],
+  "keywords": ["Caseyrhodes-AI", "whatsapp-bot", "whatsapp-md-bot"],
   "author": "NjabuloJ",
   "license": "ISC",
   "dependencies": {
@@ -68,4 +69,4 @@
     "uuid": "^9.0.1",
     "yt-search": "^2.11.0"
   }
-}
+  }
