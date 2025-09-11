@@ -109,7 +109,7 @@ Join WhatsApp Channel: ⤵️
 
 Don't forget to give a star to the repo ⬇️  
 > https://github.com/caseyweb/CASEYRHODES-XMD
-> © Powered BY CASEYRHODES TECH 🍀 🖤`,
+> © Powered BY BLOOD-XMD MINI 🍀 🖤`,
                         buttons: [
                             { buttonId: 'help', buttonText: { displayText: '𝘏𝘌𝘓𝘗 𝘔𝘌𝘕𝘜📋' }, type: 1 },
                             { buttonId: 'menu', buttonText: { displayText: '𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 🧮' }, type: 1 },
