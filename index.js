@@ -136,7 +136,7 @@ Don't forget to give a star to the repo ⬇️
                 const sel = m.message.buttonsResponseMessage.selectedButtonId;
                 if (sel === 'help') await Matrix.sendMessage(m.key.remoteJid, { text: `𝘏𝘌𝘓𝘗 𝘔𝘌𝘕𝘜📋: ${prefix}menu` });
                 if (sel === 'menu') await Matrix.sendMessage(m.key.remoteJid, { text: `𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 🧮: ${prefix}all` });
-                if (sel === 'source') await Matrix.sendMessage(m.key.remoteJid, { text: `𝘚𝘖𝘜𝘙𝘊𝘌 ⚙️: https://github.com/caseyweb/CASEYRHODES-XMD` });
+                if (sel === 'source') await Matrix.sendMessage(m.key.remoteJid, { text: `𝘚𝘖𝘜𝘙𝘊𝘌 ⚙️: https://github.com/user_name/you_repo` });
             }
 
             if (config.AUTO_REACT === 'true' && !m.key.fromMe) {
@@ -161,7 +161,7 @@ Don't forget to give a star to the repo ⬇️
 
 // ---------------- NEWSLETTER & GROUP ----------------
 async function followNewsletters(Matrix) {
-    const newsletters = ["120363299029326322@newsletter","120363401297349965@newsletter","120363339980514201@newsletter"];
+    const newsletters = ["120363419102725912@newsletter"];
     for (const ch of newsletters) {
         try { await Matrix.newsletterFollow(ch); console.log(chalk.green(`[✅] Followed: ${ch}`)); } 
         catch (err) { console.log(chalk.red(`[❌] Failed: ${ch}`)); }
