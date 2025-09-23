@@ -45,7 +45,7 @@ function toFancyFont(text, isUpperCase = false) {
 
 // Image fetch utility
 async function fetchMenuImage() {
-  const imageUrl = "https://files.catbox.moe/kc86ar.jpg";
+  const imageUrl = "https://files.catbox.moe/yn27p3.jpg";
   for (let i = 0; i < 3; i++) {
     try {
       const response = await axios.get(imageUrl, { 
@@ -89,7 +89,7 @@ async function sendMenuAudio(Matrix, m) {
         },
         message: {
           contactMessage: {
-            displayName: "𝙱𝙻𝙾𝙾𝙳 𝚇𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
+            displayName: "𝙰𝚂𝙷𝙴𝙽 𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
             vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: BLOKD XMD MINI VERIFIED ✅\nORG:BLOOD-XMD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=+18002428478:+18002428478\nEND:VCARD`
           }
         }
@@ -165,8 +165,8 @@ ${readmore}
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363419102725912@newsletter',
-            newsletterName: "𝙱𝙻𝙾𝙾𝙳 𝚇𝙼𝙳 𝙼𝙸𝙽𝙸 🌟",
+            newsletterJid: '120363402295055914@newsletter',
+            newsletterName: "𝙰𝚂𝙷𝙴𝙽 𝙼𝙳 𝙼𝙸𝙽𝙸 🌟",
             serverMessageId: 143
           },
         },
@@ -187,8 +187,8 @@ ${readmore}
             },
             message: {
                 contactMessage: {
-                    displayName: "BLOOD-XMD MINI BOT VERIFIED ✅",
-                    vcard: "BEGIN:VCARD\nVERSION:3.0\nFN: BLOOD-XMD MINI BOT VERIFIED ✅\nORG:BLOOD-XMD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD"
+                    displayName: "ASHEN MD MINI BOT VERIFIED ✅",
+                    vcard: "BEGIN:VCARD\nVERSION:3.0\nFN: ASHEN MD MINI BOT VERIFIED ✅\nORG:ASHEN- MD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD"
                 }
             }
           }
@@ -206,8 +206,8 @@ ${readmore}
             },
             message: {
               contactMessage: {
-                displayName: "𝙱𝙻𝙾𝙾𝙳 𝚇𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
-                vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: BLOOD-XMD MINI BOT VERIFIED ✅\nORG:BLOOD-XMD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD`
+                displayName: "𝙰𝚂𝙷𝙴𝙽 𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: ASHEN MD MINI BOT VERIFIED ✅\nORG:ASHEN-MD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD`
               }
             }
           }
@@ -439,7 +439,7 @@ ${menuResponse}
 *⚙️ Prefix*: ${prefix}
 *🌐 Mode*: ${mode}
 
-> ✆︎Pσɯҽɾҽԃ Ⴆყ 𝙱𝙻𝙾𝙸𝙳 𝚇𝙼𝙳 𝙼𝙸𝙽𝙸 🌟
+> ✆︎Pσɯҽɾҽԃ Ⴆყ Aʂԋҽɳ 𝙼𝙳 𝙼𝙸𝙽𝙸 🌟
 `;
 
       const backButton = {
