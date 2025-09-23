@@ -121,7 +121,7 @@ function formatSongInfo(videoInfo, videoUrl) {
   
   // Create a decorated song info with ASCII art
   return `
-╭───〘  *ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴀɪ* 〙───
+╭───〘  *🎵 ᴀꜱʜᴇɴ ᴍᴅ ꜱᴏɴɢꜱ 🎵* 〙───
 ├📝 *ᴛɪᴛʟᴇ:* ${videoInfo.title}
 ├👤 *ᴀʀᴛɪsᴛ:* ${videoInfo.author.name}
 ├⏱️ *ᴅᴜʀᴀᴛɪᴏɴ:* ${formattedDuration}
@@ -218,14 +218,14 @@ const play = async (message, client) => {
               }
             ],
             mentions: [message.sender],
-            footer: config.FOOTER || "> ᴍᴀᴅᴇ ᴡɪᴛʜ 🤍 ʙʏ ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴀɪ",
+            footer: config.FOOTER || "> ᴘᴏᴡᴇʀᴅ ʙʏ ᴀꜱʜᴇɴ ᴍᴅ ᴍɪɴɪ ʙᴏᴛ 🏮",
             headerType: 1,
             contextInfo: {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363419102725912@newsletter',
-                newsletterName: 'POWERED BY BLOOD XMD MINI',
+                newsletterJid: '120363402295055914@newsletter',
+                newsletterName: 'POWERED BY ASHEN MD MINI',
                 serverMessageId: -1
               }
             }
@@ -246,13 +246,13 @@ const play = async (message, client) => {
               }
             ],
             mentions: [message.sender],
-            footer: config.FOOTER || "> ᴍᴀᴅᴇ ᴡɪᴛʜ 🤍 ʙʏ 𝙱𝙻𝙾𝙾𝙳 𝚇𝙼𝙳ɪ",
+            footer: config.FOOTER || "> ᴘᴏᴡᴇʀᴅ ʙʏ ᴀꜱʜᴇɴ ᴍᴅ ᴍɪᴊɪ ʙᴏᴛ 🏮",
             contextInfo: {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363419102725912@newsletter',
-                newsletterName: 'POWERED BY BLOOD XMD MINI',
+                newsletterJid: '120363402295055914@newsletter',
+                newsletterName: 'POWERED BY ASHEN MD MINI',
                 serverMessageId: -1
               }
             }
@@ -316,8 +316,8 @@ const play = async (message, client) => {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363419102725912@newsletter',
-                newsletterName: 'POWERED BY BLOOD-XMD MINI',
+                newsletterJid: '120363402295055914@newsletter',
+                newsletterName: 'POWERED BY ASHEN MD MINI',
                 serverMessageId: -1
               }
             }
@@ -331,8 +331,8 @@ const play = async (message, client) => {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363419102725912@newsletter',
-                newsletterName: 'POWERED BY BLOOD-XMD MINI',
+                newsletterJid: '120363402295055914@newsletter',
+                newsletterName: 'POWERED BY ASHEN MD MINI',
                 serverMessageId: -1
               }
             }
