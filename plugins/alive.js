@@ -97,7 +97,7 @@ const alive = async (m, Matrix) => {
         // Check if image file exists
         let imageBuffer;
         try {
-            imageBuffer = fs.readFileSync('https://files.catbox.moe/kc86ar.jpg');
+            imageBuffer = fs.readFileSync('https://files.catbox.moe/yn27p3.jpg');
         } catch (error) {
             console.log('Image file not found, sending text message only');
         }
@@ -111,8 +111,8 @@ const alive = async (m, Matrix) => {
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363419102725912@newsletter',
-                    newsletterName: 'BLOOD-XMD MINI',
+                    newsletterJid: '120363402295055914@newsletter',
+                    newsletterName: 'ASHEN MD MINI',
                     serverMessageId: -1
                 }
             }
