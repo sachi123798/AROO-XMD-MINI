@@ -28,8 +28,8 @@ const ping = async (m, Matrix) => {
     // ======================
     // CONTENT DEFINITION
     // ======================
-    const imageUrl = "https://files.catbox.moe/kc86ar.jpg";
-    const text = `*👁️‍🗨️ BLOOD-XMD* : ${responseTime.toFixed(2)} s`;
+    const imageUrl = "https://files.catbox.moe/yn27p3.jpg";
+    const text = `*👁️‍🗨️ ASHEN MD* : ${responseTime.toFixed(2)} s`;
     
     // ======================
     // BUTTONS DEFINITION
@@ -73,7 +73,7 @@ const ping = async (m, Matrix) => {
       
       // Text content
       caption: text,
-      footer: "BLOOD-XMD MINI BOT",
+      footer: "ASHEN MD MINI BOT",
       
       // Interactive elements
       buttons: buttons,
@@ -88,8 +88,8 @@ const ping = async (m, Matrix) => {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363419102725912@newsletter',
-          newsletterName: 'ᴘᴏᴡᴇʀᴅ ʙʏ ʙʟᴏᴏᴅ xᴍᴅ',
+          newsletterJid: '120363402295055914@newsletter',
+          newsletterName: 'ᴀꜱʜᴇɴ ᴍᴅ ᴘɪɴɢ',
           serverMessageId: -1
         }
       }
