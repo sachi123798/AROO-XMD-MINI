@@ -9,8 +9,8 @@ const repo = async (m, gss) => {
   const args = m.body.slice(prefix.length).trim().split(/ +/).slice(1);
 
   if (["repo", "sc", "script", "info"].includes(cmd)) {
-    const githubRepoURL = "https://github.com/caseyweb/CASEYRHODES-XMD";
-    const channelURL = "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E";
+    const githubRepoURL = "https://github.com";
+    const channelURL = "https://whatsapp.com/channel/0029VbBRZ86LdQegTfP01u3a";
     const supportURL = "https://chat.whatsapp.com/GbpVWoHH0XLHOHJsYLtbjH?mode=ac_t";
 
     try {
@@ -22,10 +22,10 @@ const repo = async (m, gss) => {
       }
 
       const repoData = response.data;
-      const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 𝐁𝐋𝐎𝐎𝐃-𝐗𝐌𝐃 𝐌𝐈𝐍𝐈 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!😇👑* 
+      const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 𝐀𝐒𝐇𝐄𝐍 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!😇👑* 
 > *sɪᴍᴘʟᴇ, ɪᴄʏ, ᴄᴏʟᴅ  & ʀɪᴄʜ ʟᴏᴀᴅᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ғᴇᴀᴛᴜʀᴇs, ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ.*❄️
 
-*𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐄𝐈𝐍𝐆 𝐁𝐋𝐎𝐎𝐃-𝐗𝐌𝐃 𝐌𝐈𝐍𝐈🫶* 
+*𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐄𝐈𝐍𝐆 𝐀𝐒𝐇𝐄𝐍 𝐌𝐃 𝐌𝐈𝐍𝐈🫶* 
 ${readmore}
 > *ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ sᴛᴀʀ & ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ🌟🍴
 
@@ -63,8 +63,8 @@ ${readmore}
             forwardingScore: 1,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363419102725912@newsletter',
-              newsletterName: 'POWERED BY BLOOD-XMD MINI',
+              newsletterJid: '120363402295055914@newsletter',
+              newsletterName: 'POWERED BY ASHEN MD MINI',
               serverMessageId: -1
             }
           }
