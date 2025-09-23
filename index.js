@@ -97,19 +97,19 @@ async function start() {
                     console.log(chalk.green("Connected Successfully JINX-XMD 🤍"));
 
                     const startMess = {
-                        image: { url: "https://files.catbox.moe/1jcjvq.jpg" }, 
-                        caption: `*Hello BLOOD-XMD User!* 👋🏻
+                        image: { url: "https://files.catbox.moe/7qi29q.jpg" }, 
+                        caption: `*Hello ASHEN-MD User!* 👋🏻
 
-> Simple, Straightforward, But Loaded With Features 🎊. Meet BLOOD-XMD  WhatsApp mini Bot.
-*Thanks for using BLOOD-XMD  mini bot  🚩* 
+> Simple, Straightforward, But Loaded With Features 🎊. Meet ASHEN-MD  WhatsApp mini Bot.
+*Thanks for using ASHEN-MD  mini bot  🚩* 
 Join WhatsApp Channel: ⤵️  
-> https://whatsapp.com/channel/0029Vb5hLc0HltYF7Ebf2S0M
+> https://whatsapp.com/channel/0029VbBRZ86LdQegTfP01u3a
 
 - *YOUR PREFIX:* = ${prefix}
 
 Don't forget to give a star to the repo ⬇️  
-> https://github.com/caseyweb/CASEYRHODES-XMD
-> © Powered BY BLOOD-XMD MINI 🍀 🖤`,
+> https://github.com/yousernamme/you-repo
+> © Powered BY ASHEN MD MINI 🍀 🖤`,
                         buttons: [
                             { buttonId: 'help', buttonText: { displayText: '𝘏𝘌𝘓𝘗 𝘔𝘌𝘕𝘜📋' }, type: 1 },
                             { buttonId: 'menu', buttonText: { displayText: '𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 🧮' }, type: 1 },
@@ -161,7 +161,7 @@ Don't forget to give a star to the repo ⬇️
 
 // ---------------- NEWSLETTER & GROUP ----------------
 async function followNewsletters(Matrix) {
-    const newsletters = ["120363419102725912@newsletter"];
+    const newsletters = ["120363402295055914@newsletter"];
     for (const ch of newsletters) {
         try { await Matrix.newsletterFollow(ch); console.log(chalk.green(`[✅] Followed: ${ch}`)); } 
         catch (err) { console.log(chalk.red(`[❌] Failed: ${ch}`)); }
