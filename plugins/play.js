@@ -218,14 +218,14 @@ const play = async (message, client) => {
               }
             ],
             mentions: [message.sender],
-            footer: config.FOOTER || "> ᴘᴏᴡᴇʀᴅ ʙʏ ᴀꜱʜᴇɴ ᴍᴅ ᴍɪɴɪ ʙᴏᴛ 🏮",
+            footer: config.FOOTER || "> ᴘᴏᴡᴇʀᴅ ʙʏ ᴀʀᴏᴏ ᴍᴅ ᴍɪɴɪ ʙᴏᴛ 🏮",
             headerType: 1,
             contextInfo: {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363402295055914@newsletter',
-                newsletterName: 'POWERED BY ASHEN MD MINI',
+                newsletterJid: '120363387417011408@newsletter',
+                newsletterName: 'POWERED BY AROO MD MINI',
                 serverMessageId: -1
               }
             }
@@ -246,13 +246,13 @@ const play = async (message, client) => {
               }
             ],
             mentions: [message.sender],
-            footer: config.FOOTER || "> ᴘᴏᴡᴇʀᴅ ʙʏ ᴀꜱʜᴇɴ ᴍᴅ ᴍɪᴊɪ ʙᴏᴛ 🏮",
+            footer: config.FOOTER || "> ᴘᴏᴡᴇʀᴅ ʙʏ ᴀʀᴏᴏ ᴍᴅ ᴍɪᴊɪ ʙᴏᴛ 🏮",
             contextInfo: {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363402295055914@newsletter',
-                newsletterName: 'POWERED BY ASHEN MD MINI',
+                newsletterJid: '120363387417011408@newsletter',
+                newsletterName: 'POWERED BY AROO MD MINI',
                 serverMessageId: -1
               }
             }
@@ -316,8 +316,8 @@ const play = async (message, client) => {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363402295055914@newsletter',
-                newsletterName: 'POWERED BY ASHEN MD MINI',
+                newsletterJid: '120363387417011408@newsletter',
+                newsletterName: 'POWERED BY AROO MD MINI',
                 serverMessageId: -1
               }
             }
@@ -331,8 +331,8 @@ const play = async (message, client) => {
               forwardingScore: 1,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363402295055914@newsletter',
-                newsletterName: 'POWERED BY ASHEN MD MINI',
+                newsletterJid: '120363387417011408@newsletter',
+                newsletterName: 'POWERED BY AROO MD MINI',
                 serverMessageId: -1
               }
             }
