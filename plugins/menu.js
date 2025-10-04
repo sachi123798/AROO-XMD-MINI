@@ -89,8 +89,8 @@ async function sendMenuAudio(Matrix, m) {
         },
         message: {
           contactMessage: {
-            displayName: "𝙰𝚂𝙷𝙴𝙽 𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
-            vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: BLOKD XMD MINI VERIFIED ✅\nORG:BLOOD-XMD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=+18002428478:+18002428478\nEND:VCARD`
+            displayName: "𝙰𝚁𝙾𝙾 𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
+            vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: AROO XMD MINI VERIFIED ✅\nORG:AROO MD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=+18002428478:+18002428478\nEND:VCARD`
           }
         }
       }
@@ -165,8 +165,8 @@ ${readmore}
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363402295055914@newsletter',
-            newsletterName: "𝙰𝚂𝙷𝙴𝙽 𝙼𝙳 𝙼𝙸𝙽𝙸 🌟",
+            newsletterJid: '120363387417011408@newsletter',
+            newsletterName: "𝙰𝚁𝙾𝙾 𝙼𝙳 𝙼𝙸𝙽𝙸 🌟",
             serverMessageId: 143
           },
         },
@@ -187,8 +187,8 @@ ${readmore}
             },
             message: {
                 contactMessage: {
-                    displayName: "ASHEN MD MINI BOT VERIFIED ✅",
-                    vcard: "BEGIN:VCARD\nVERSION:3.0\nFN: ASHEN MD MINI BOT VERIFIED ✅\nORG:ASHEN- MD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD"
+                    displayName: "AROO MD MINI BOT VERIFIED ✅",
+                    vcard: "BEGIN:VCARD\nVERSION:3.0\nFN: AROO MD MINI BOT VERIFIED ✅\nORG:AROO- MD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD"
                 }
             }
           }
@@ -206,8 +206,8 @@ ${readmore}
             },
             message: {
               contactMessage: {
-                displayName: "𝙰𝚂𝙷𝙴𝙽 𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
-                vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: ASHEN MD MINI BOT VERIFIED ✅\nORG:ASHEN-MD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD`
+                displayName: "𝙰𝚁𝙾𝙾 𝙼𝙳 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 ✅",
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: AROO MD MINI BOT VERIFIED ✅\nORG:AROO-MD MINI BOT;\nTEL;type=CELL;type=VOICE;waid=18002428478:+18002428478\nEND:VCARD`
               }
             }
           }
@@ -439,7 +439,7 @@ ${menuResponse}
 *⚙️ Prefix*: ${prefix}
 *🌐 Mode*: ${mode}
 
-> ✆︎Pσɯҽɾҽԃ Ⴆყ Aʂԋҽɳ 𝙼𝙳 𝙼𝙸𝙽𝙸 🌟
+> ✆︎Pσɯҽɾҽԃ Ⴆყ AROO 𝙼𝙳 𝙼𝙸𝙽𝙸 🌟
 `;
 
       const backButton = {
