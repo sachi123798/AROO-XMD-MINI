@@ -22,10 +22,10 @@ const repo = async (m, gss) => {
       }
 
       const repoData = response.data;
-      const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 𝐀𝐒𝐇𝐄𝐍 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!😇👑* 
+      const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 𝐀𝐑𝐎𝐎 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!😇👑* 
 > *sɪᴍᴘʟᴇ, ɪᴄʏ, ᴄᴏʟᴅ  & ʀɪᴄʜ ʟᴏᴀᴅᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ғᴇᴀᴛᴜʀᴇs, ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ.*❄️
 
-*𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐄𝐈𝐍𝐆 𝐀𝐒𝐇𝐄𝐍 𝐌𝐃 𝐌𝐈𝐍𝐈🫶* 
+*𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐄𝐈𝐍𝐆 𝐀𝐑𝐎𝐎 𝐌𝐃 𝐌𝐈𝐍𝐈🫶* 
 ${readmore}
 > *ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ sᴛᴀʀ & ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ🌟🍴
 
@@ -63,8 +63,8 @@ ${readmore}
             forwardingScore: 1,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363402295055914@newsletter',
-              newsletterName: 'POWERED BY ASHEN MD MINI',
+              newsletterJid: '120363387417011408@newsletter',
+              newsletterName: 'POWERED BY AROO MD MINI',
               serverMessageId: -1
             }
           }
@@ -87,7 +87,7 @@ ${readmore}
         await gss.sendMessage(
           m.from,
           {
-            text: "*👤 Owner Information*\n\n*Name:* Casey Rhodes\n*Contact:* Add owner contact details here\n*GitHub:* https://github.com/caseyweb\n\n*Feel free to contact for any queries!*"
+            text: "*👤 Owner Information*\n\n*Name:* SACHITHRA\n*Contact:* Add owner contact details here\n*WHATSAPP 🧮:* 94761332610\n\n*Feel free to contact for any queries!*"
           },
           { quoted: m }
         );
