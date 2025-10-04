@@ -21,7 +21,7 @@ const ping = async (m, Matrix) => {
     // PERFORMANCE MEASUREMENT
     // ======================
     const start = new Date().getTime();
-    await m.React("👻");
+    await m.React("🥷");
     const end = new Date().getTime();
     const responseTime = (end - start) / 1000;
     
@@ -29,7 +29,7 @@ const ping = async (m, Matrix) => {
     // CONTENT DEFINITION
     // ======================
     const imageUrl = "https://files.catbox.moe/yn27p3.jpg";
-    const text = `*👁️‍🗨️ ASHEN MD* : ${responseTime.toFixed(2)} s`;
+    const text = `*👁️‍🗨️ AROO MD* : ${responseTime.toFixed(2)} s`;
     
     // ======================
     // BUTTONS DEFINITION
@@ -73,7 +73,7 @@ const ping = async (m, Matrix) => {
       
       // Text content
       caption: text,
-      footer: "ASHEN MD MINI BOT",
+      footer: "AROO MD MINI BOT",
       
       // Interactive elements
       buttons: buttons,
@@ -88,8 +88,8 @@ const ping = async (m, Matrix) => {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363402295055914@newsletter',
-          newsletterName: 'ᴀꜱʜᴇɴ ᴍᴅ ᴘɪɴɢ',
+          newsletterJid: '120363387417011408@newsletter',
+          newsletterName: 'ᴀʀᴏᴏ ᴍᴅ ᴘɪɴɢ',
           serverMessageId: -1
         }
       }
